@@ -5,9 +5,9 @@ export default function App() {
   const [color, setColor] = useState('#ffffff');
 
   function randomColor() {
-    const TempColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+    const tempColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
 
-    setColor(TempColor);
+    setColor(tempColor);
   }
 
   return (
