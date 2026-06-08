@@ -24,7 +24,6 @@ export default function App() {
         style={{
           backgroundColor: 'white',
           color: 'black',
-          marginTop: '100px',
           padding: '20px 20px 20px 20px',
           borderWidth: '2px',
           borderStyle: 'solid',
