@@ -20,7 +20,7 @@ export default function App() {
         height: '100vh',
       }}
     >
-      <div className="App">
+      <div>
         <button
           style={{
             backgroundColor: 'white',
