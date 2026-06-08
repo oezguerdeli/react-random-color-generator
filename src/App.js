@@ -20,23 +20,21 @@ export default function App() {
         height: '100vh',
       }}
     >
-      <div>
-        <button
-          style={{
-            backgroundColor: 'white',
-            color: 'black',
-            marginTop: '100px',
-            padding: '20px 20px 20px 20px',
-            borderWidth: '2px',
-            borderStyle: 'solid',
-            borderRadius: '8px',
-          }}
-          onClick={randomColor}
-          data-testid="btn"
-        >
-          Generate
-        </button>
-      </div>
+      <button
+        style={{
+          backgroundColor: 'white',
+          color: 'black',
+          marginTop: '100px',
+          padding: '20px 20px 20px 20px',
+          borderWidth: '2px',
+          borderStyle: 'solid',
+          borderRadius: '8px',
+        }}
+        onClick={randomColor}
+        data-testid="btn"
+      >
+        Generate
+      </button>
 
       <div
         style={{
