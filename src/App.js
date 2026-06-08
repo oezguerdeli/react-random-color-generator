@@ -51,7 +51,7 @@ export default function App() {
           alignItems: 'center',
         }}
       >
-        Generate Color: {color}
+        Generated Color: {color}
       </div>
     </div>
   );
