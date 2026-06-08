@@ -32,7 +32,7 @@ export default function App() {
           }}
           onClick={randomColor}
         >
-          Generate Random Color
+          Generate
         </button>
       </div>
 
@@ -51,7 +51,7 @@ export default function App() {
           alignItems: 'center',
         }}
       >
-        {color}
+        Generate Color: {color}
       </div>
     </div>
   );
