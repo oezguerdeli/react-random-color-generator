@@ -1,23 +1,58 @@
 import './App.css';
-import logo from './logo.svg';
+import { useState } from 'react';
 
 export default function App() {
+  const [color, setColor] = useState('#ffffff');
+
+  function randomColor() {
+    const TempColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+
+    setColor(TempColor);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
+      <div className="App">
+        <button
+          style={{
+            backgroundColor: 'white',
+            color: 'black',
+            marginTop: '100px',
+            padding: '20px 20px 20px 20px',
+            borderWidth: '2px',
+            borderStyle: 'solid',
+            borderRadius: '8px',
+          }}
+          onClick={randomColor}
         >
-          Learn React
-        </a>
-      </header>
+          Generate Random Color
+        </button>
+      </div>
+
+      <div
+        style={{
+          marginTop: '20px',
+          width: '300px',
+          height: '150px',
+          backgroundColor: color,
+          display: 'flex',
+          color: 'white',
+          fontSize: '24px',
+          borderRadius: '10px',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
+        {color}
+      </div>
     </div>
   );
 }
