@@ -17,6 +17,7 @@ export default function App() {
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
+        height: '100vh',
       }}
     >
       <div className="App">
@@ -31,6 +32,7 @@ export default function App() {
             borderRadius: '8px',
           }}
           onClick={randomColor}
+          data-testid="btn"
         >
           Generate
         </button>
