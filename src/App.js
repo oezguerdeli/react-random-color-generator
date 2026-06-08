@@ -43,7 +43,7 @@ export default function App() {
           height: '150px',
           backgroundColor: color,
           display: 'flex',
-          color: 'white',
+          color: 'black',
           fontSize: '24px',
           borderRadius: '10px',
           flexDirection: 'column',
